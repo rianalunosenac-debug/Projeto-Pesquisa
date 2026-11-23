@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente de Estudos com IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Assistente de Estudos com IA</h1>
+
+        <!-- Formulário (R1) -->
+        <div class="form-group">
+            <textarea id="perguntaInput" placeholder="Escreva sua dúvida aqui..."></textarea>
+            <button id="perguntaBtn" onclick="enviarPergunta()">Perguntar</button>
+        </div>
+
+        <!-- Área de Resposta da IA (R4) -->
+        <div id="respostaContainer" class="resposta-box">
+            <!-- A resposta vai aparecer aqui -->
+        </div>
+
+        <!-- Histórico (R6 e R7) -->
+        <section>
+            <h2>Histórico de Perguntas</h2>
+            <div id="historicoContainer"></div>
+        </section>
+    </main>
+
+<!-- Substitua a linha 33 antiga por esta: -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
